@@ -1,0 +1,15 @@
+* {
+    display: flex;
+    flex-direction: column;
+}
+
+.textrutor {
+    flex-direction: row;
+}
+
+.topimages {
+    flex-direction: row;
+    
+}
+
+
