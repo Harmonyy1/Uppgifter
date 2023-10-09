@@ -26,27 +26,26 @@
 
 .topimages {
     flex-direction: row;
-    width: 100%;
+    width: 95%;
     height: 12rem;
     margin-bottom: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     justify-content: center;
     align-items: center;
 }
 
 .topimages img {
-    width: 23%;
+    width: 22%;
     margin-left: 1%;
     margin-right: 1%;
     transition: all 1s ease-in-out;
-    height: 10rem;
+    height: 12rem;
 }
 
 .topimages img:hover {
-    height: 14rem;
+    height: 13rem;
     width: 25%;
 }
-
 
 
 .textrutor {
@@ -54,12 +53,12 @@
 }
 
 .ltext {
-    width: 48%;
+    width: 45%;
     margin-left: 2%;
 }
 
 .rtext {
-    width: 48%;
+    width: 45%;
     flex-direction: row;
     margin-left: 2%;
     gap: 1rem;
@@ -70,6 +69,7 @@
     width: 25%;
     justify-content: center;
     align-items: center;
+    padding-left: 3rem;
 }
 
 .images img {
