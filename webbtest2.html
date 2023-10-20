@@ -15,29 +15,46 @@
 
         .main {
             border: 0.5rem solid rgb(255, 100, 150);
-            width: 25rem;
+            width: 35rem;
+            height: 18rem;
             padding: 1rem;
             display: flex;
             flex-direction: column;
+            background: url("https://picsum.photos/id/715/1920/1080");
+            
         }
         
         .header{
             font-weight: bold;
             background: rgb(255, 0, 120);
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        
+            width: 100%;
+            height: 12.5%;
+        }
+
+        .header h1 {
+            
+            display: flex;
+            justify-content: center;
         }
 
         .toptext {
             padding-top: 1rem;
-            padding-bottom: 1rem;
+            padding-left: 0.5rem;
             font-weight: bold;
+        }
+
+        .bottomtext {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 0.5rem;
         }
 
         .byline {
             display: flex;
             flex-direction: row;
-            padding-top: 1rem;
+            width: 100%;
+            height: 100%;
         }
 
         .byline h3 {
@@ -54,8 +71,17 @@
             flex-direction: row;
         }
 
+        .texts {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+
         .pic {
             padding-left: 1.5rem;
+            transform: rotate(3deg);
+            width: 33%;
         }
 
 
@@ -72,30 +98,30 @@
         </div>
 
         <div class="textandpic">    
+            <div class="texts">
+                <div class="toptext">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nam repudiandae deleniti enim totam vel eveniet corrupti 
+                        quibusdam repellendus reprehenderit sint adipisci quod odio in, 
+                        molestias recusandae expedita ab voluptate commodi omnis nemo blanditiis! 
+                        </p>
+                </div>
 
-            <div class="toptext">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Nam repudiandae deleniti enim totam vel eveniet corrupti 
-                    quibusdam repellendus reprehenderit sint adipisci quod odio in, 
-                    molestias recusandae expedita ab voluptate commodi omnis nemo blanditiis! 
-                    </p>
-            </div>
-
-            <div class="bottomtext">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto mollitia quasi, 
-                    porro commodi praesentium tempore eum aliquam tenetur vitae ut atque ipsum vero 
-                    </p>
+                <div class="bottomtext">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto mollitia quasi, 
+                        porro commodi praesentium tempore eum aliquam tenetur vitae ut atque ipsum vero 
+                        </p>
+                </div>
+                <div class="byline">
+                    <img src="https://picsum.photos/id/306/50/50" alt="">
+                    <h3>by Gabriel Sennerblom</h3>
+                </div>
             </div>
 
             <div class="pic">
                 <img src="https://picsum.photos/id/306/150/200" alt="">
             </div>
         </div>
-        <div class="byline">
-            <img src="https://picsum.photos/id/306/50/50" alt="">
-            <h3>by Gabriel Sennerblom</h3>
-        </div>
-
     </div>
     
 </body>
