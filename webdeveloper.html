@@ -8,59 +8,127 @@
 
         <style>
 
+            *{
+                padding: 0;
+                margin: 0;
+            }
 
+            .main {
+                width: 100%;
+            }
+
+            .pageheader{
+                display: flex;
+                flex-direction: row;
+                width: 97%;
+                height: 10%;
+                border: 1rem solid black;
+            }
+
+            .pageheader h1{
+                margin-top: 2rem;
+                margin-left: 1rem;
+                font-size: 40px;
+                width: 50%;
+            }
+
+            .pageheader img{
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+
+            }
+
+            .headermenu{
+                display: flex;
+                flex-direction: row;
+                margin-top: 1rem;
+                width: 45%;
+                justify-content: center;
+            }
+
+            .headermenu p{
+                margin-left: 3rem;
+                margin-right: 3rem;
+                margin-top: 1.5rem;
+            }
+
+            .latestbirds {
+                width: 75%;
+                height: 25%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-top: 2.5%;
+            }
+
+            .latestbirds img {
+                width: 225px;
+                height: 150px;
+                padding-right: 1rem;
+            }
+
+            .birb {
+                display: flex;
+                flex-direction: row;
+                width: 50%;
+            }
 
         </style>
 </head>
 <body>
     <div class="main">
         <div class="pageheader">
-
+            <img src="https://static.wikia.nocookie.net/birds/images/8/8d/Parus_minor.jpg" alt="birblogo"/>
             <h1>Föreningen för fågelskådning i Falsterbo</h1>
-            <img src="https://static.wikia.nocookie.net/birds/images/8/8d/Parus_minor.jpg/revision/latest?cb=20220731180029" alt="birblogo"/>
 
-            <div class="picmenu">
-                <p>BILDER</p>
+            <div class="headermenu">
+                <div class="picmenu">
+                    <p>BILDER</p>
 
-            </div>
+                </div>
 
-            <div class="plannermenu">
-                <p>ÅRSCHEMA</p>
+                <div class="plannermenu">
+                    <p>ÅRSCHEMA</p>
 
-            </div>
+                </div>
 
-            <div class="aboutusmenu">
-                <p>OM OSS</p>
+                <div class="aboutusmenu">
+                    <p>OM OSS</p>
 
-            </div>
+                </div>
 
-            <div class="menumenu">
+                <div class="menumenu">
                 
+                </div>
             </div>
+
         </div>
 
         <div class="latestbirds">
             <h1>Senaste fåglar</h1>
-            <div class="bird1">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Pato_aguja_africano_%28Anhinga_rufa%29%2C_parque_nacional_de_Chobe%2C_Botsuana%2C_2018-07-28%2C_DD_46.jpg" alt="birb2"/>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Nemo et modi voluptas corporis odio odit, neque illo sint 
-                    omnis nobis, quasi non quia eos at, accusamus laudantium perferendis. Repellendus, perspiciatis!</p>
-            </div>
+            <div class="birb">
+                <div class="bird1">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Pato_aguja_africano_%28Anhinga_rufa%29%2C_parque_nacional_de_Chobe%2C_Botsuana%2C_2018-07-28%2C_DD_46.jpg" alt="birb2"/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nemo et modi voluptas corporis odio odit, neque illo sint 
+                        omnis nobis, quasi non quia eos at, accusamus laudantium perferendis. Repellendus, perspiciatis!</p>
+                </div>
 
-            <div class="bird2">
-                <img src="https://live.staticflickr.com/5177/5541964449_19dd247e92_b.jpg" alt="birb2"/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Alias facere nesciunt soluta incidunt eveniet distinctio 
-                    atque blanditiis laboriosam vero nihil voluptates animi accusantium 
-                    fugiat veniam aliquid corrupti dolor minima aperiam architecto, vitae commodi tenetur saepe.</p>
-            </div>
+                <div class="bird2">
+                    <img src="https://live.staticflickr.com/5177/5541964449_19dd247e92_b.jpg" alt="birb2"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Alias facere nesciunt soluta incidunt eveniet distinctio 
+                        atque blanditiis laboriosam vero nihil voluptates animi accusantium 
+                        fugiat veniam aliquid corrupti dolor minima aperiam architecto, vitae commodi tenetur saepe.</p>
+                </div>
 
-            <div class="bird3">
-                <img src="https://miro.medium.com/v2/resize:fit:1400/1*2HVP4iikO5RQ8fRKtKVxXQ.jpeg" alt="birb3"/>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Dolorum quibusdam accusamus odio laudantium? Illum ad aperiam a 
-                    libero dolorum cupiditate ipsa ut molestiae, in animi.</p>
+                <div class="bird3">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/1*2HVP4iikO5RQ8fRKtKVxXQ.jpeg" alt="birb3"/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dolorum quibusdam accusamus odio laudantium? Illum ad aperiam a 
+                        libero dolorum cupiditate ipsa ut molestiae, in animi.</p>
+                </div>
             </div>
         </div>
 
@@ -86,16 +154,20 @@
         </div>
 
         <div class="news">
+            <h2>NYHETER</h2>
             <div class="news1">
-
+                <img src="https://picsum.photos/id/306/200/150">
+                <p>2023-10-25</p>
             </div>
 
             <div class="news2">
-                
+                <img src="https://picsum.photos/id/306/200/150">
+                <p>2023-11-03</p>
             </div>
 
             <div class="news3">
-
+                <img src="https://picsum.photos/id/306/200/150">
+                <p>2023-11-17</p>
             </div>
         </div>
 
