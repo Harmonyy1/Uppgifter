@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/CSS">
+
+        <style>
+
+            *{
+                padding: 0;
+                margin: 0;
+            }
+
+            .main {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .pageheader{
+                display: flex;
+                flex-direction: row;
+                width: 97%;
+                height: 10%;
+                border: 1rem solid black;
+            }
+
+            .pageheader h1{
+                margin-top: 2rem;
+                margin-left: 1rem;
+                font-size: 40px;
+                width: 50%;
+            }
+
+            .pageheader img{
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+            }
+
+            .headermenu{
+                display: flex;
+                flex-direction: row;
+                margin-top: 1rem;
+                width: 45%;
+                justify-content: center;
+            }
+
+            .headermenu div{
+                margin-left: 3rem;
+                margin-right: 3rem;
+                margin-top: 1.5rem;
+            }
+
+            .headermenu a{
+                color: black;
+                text-decoration: none;
+            }
+
+            .headermenu a:hover {
+                font-weight: bold;
+            }
+
+        </style>
+</head>
+<body>
+    <div class="main">
+        <div class="pageheader">
+            <img src="https://static.wikia.nocookie.net/birds/images/8/8d/Parus_minor.jpg" alt="birblogo"/>
+            <h1>Föreningen för fågelskådning i Falsterbo</h1>
+
+            <div class="headermenu">
+                <div class="picmenu">
+                    <a href="./bilder.html">BILDER</a>
+                </div>
+
+                <div class="plannermenu">
+                    <a href="./arsschema.html">ÅRSSCHEMA</a>
+
+                </div>
+
+                <div class="aboutusmenu">
+                    <a href="./omoss.html">OM OSS</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
