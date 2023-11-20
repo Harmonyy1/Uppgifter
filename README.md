@@ -1,2 +1,2 @@
 # Uppgifter
-Uppgifter i Webbteknik
+Uppgifter i Webbteknik och programmering
