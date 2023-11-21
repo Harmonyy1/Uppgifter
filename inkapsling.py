@@ -29,4 +29,9 @@ konto.visa_saldo()
 #Uppgift 2
 
 class Studerande():
+    def __init__(self, namn, ålder, betyg):
+        self.__namn = namn
+        self.__ålder = ålder
+        self.__betyg = betyg
+
     
