@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+
+        div{
+            width: 20%;
+            height: 100%;
+            background: blue;
+            position: absolute;
+        }
+
+        .left{
+            left: 0;
+            background: red;
+        }
+
+        .right{
+            right: 0;
+            background: blue;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+
+
+</body>
+
+
+
+</html>
+
+
+<script>
+
+    const box = document.createElement("div");
+    box.classList.add("right");
+    document.body.appendChild(box);
+    box.addEventListener("click", move)
+
+    
+
+    function move(){
+        if(box.classList.contains("right")){
+            box.classList.remove("right");
+            box.classList.add("left");
+        }
+
+        else{
+            box.classList.remove("left");
+            box.classList.add("right");
+        }
+    }
+
+
+</script>
+
