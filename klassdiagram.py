@@ -1,13 +1,13 @@
 class Djur():
     def __init__(self, namn):
         self.namn = namn
+        self.läte = "Djur kan ha många olika läten!"
 
-    def läte(self):
-        pass
-
-    def __str__(self):
+    def to_string(self):
         return f"{self.namn} låter såhär: {self.läte}"
     
+    def print_info(self):
+        print(self.to_string())
 
         
 
@@ -16,35 +16,24 @@ class Djur():
 class Däggdjur(Djur):
     def __init__(self, namn):
         super().__init__(namn)
-        
-    def läte(self):
-        pass
 
 
 class Kräldjur(Djur):
     def __init__(self, namn):
         super().__init__(namn)
-    
-    def läte(self):
-        pass
 
 
 class Fåglar(Djur):
     def __init__(self, namn):
         super().__init__(namn)
-
-    def läte(self):
-        pass
-
-
+        
 
 class Människa(Däggdjur):
     def __init__(self, namn):
         super().__init__(namn)
+        self.läte = "Hey you! What are you doing in my house!?"
+        
 
-    def läte(self):
-        return f"Hey you! What are you doing in my house!?"
-    
     def to_string(self):
         return super().to_string()
     
@@ -56,8 +45,3 @@ class Människa(Däggdjur):
 hooman = Människa("Akile")
 
 hooman.print_info()
-
-
-
-#Kolla mer på __str__ och fixa så att koden fungerar
-
