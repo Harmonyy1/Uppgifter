@@ -26,6 +26,8 @@ class Kräldjur(Djur):
 class Fåglar(Djur):
     def __init__(self, namn):
         super().__init__(namn)
+
+        
         
 
 class Människa(Däggdjur):
