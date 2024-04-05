@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+   <style>
+
+
+        /* alla divvar som har en h2 sätta i mitten av skärmen */
+        div:has(h2) {       
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* alla h2 och h3 i divvar blir röda */
+        div :is(h2,h3){
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <div>
+        <h1>har har</h1>
+    </div>
+
+    <div>
+        <h2>har har</h2>
+    </div>
+
+    <div>
+        <h3>har har</h3>
+    </div>
+
+
+</body>
+</html>
